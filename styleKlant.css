@@ -1,0 +1,121 @@
+.wrapper {
+  /* layout */
+  display: grid !important;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 12px;
+  /* style */
+  font-family: "Poppins", sans-serif;
+}
+
+.welkom {
+  /* layout */
+  grid-column: 1/ 7;
+  grid-row: 1/ 9;
+  display: block;
+  position: relative;
+  /* style */
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project {
+  /* layout */
+  display: flex;
+  grid-column: 7/ 17;
+  grid-row: 1/ 9;
+  justify-content: right;
+  /* style */
+  border-radius: 40px;
+  /* background: #fff; */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: url("/screenPrototype/img/Logo_BvdB_2023_wit 1.png");
+}
+
+h1 {
+  margin-left: 40px;
+  font-weight: 700;
+}
+
+.text {
+  margin: 40px;
+  width: 30rem;
+
+  font-weight: 400;
+}
+
+.img1 {
+  /* layout */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+  /* style */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  flex-shrink: 0;
+}
+
+.overlay {
+  /* layout */
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.Welkom__groet {
+  /* layout */
+  position: absolute;
+  bottom: 50%;
+  left: 0rem;
+
+  /* style */
+  background-color: rgba(255, 255, 255, 1);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.Welkom__groet > div{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #f07f45;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  
+}
+
+.img2 {
+  /* layout */
+  float: right;
+  /* style */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.imgLogo {
+  /* layout */
+
+  width: 499px;
+  height: 228px;
+  flex-shrink: 0;
+
+  /* style */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  background: lightgray 50% / cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
