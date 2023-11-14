@@ -4,24 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/screenPrototype/styleKlant.css" />
+    <link rel="stylesheet" href="./styleKlant.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script>
+      setInterval(selectScreen, 300000);
+
+function selectScreen() {
+  const d = new Date();
+  let hour = d.getHours();
+
+  if (hour < 12) {
+    
+    window.location.href = './ochtend.html';
+    console.log('./ochtend.html');
+  } else if (hour >= 12 && hour < 15) {
+    window.location.href = './middag.html';
+  } else {
+    window.location.href = './avond.html';
+  }
+}
+
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <div class="welkom">
-        <img class="img1" src="/screenPrototype/img/kantoor.png">
+        <img class="img1" src="./img/kantoor.png">
         <img class="overlay" src="/screenPrototype/img/Logo_BvdB_2023_wit 3.png">
         <div class="Welkom__groet"><div>Welkom!</div></div>
     </div>
       <div class="project">
         <div class="project__content">
-        <img class="imgLogo" src="/screenPrototype/img/radio.png">
+        <img class="imgLogo" src="./img/radio.png">
         <div class="text">
         Voor het Muziekcentrum van de Omroep mochsten we een pakket sites
         ontwikkelen. Zo kreeg het Radio Filharmonisch Orkest een nieuwe site:</br>
@@ -30,7 +49,7 @@
         werk voor een mooi merk
         </div>
 </div>
-        <img class="img2" src="/screenPrototype/img/concert.png">
+        <img class="img2" src="./img/concert.png">
       </div>
     </div>
   </body>

@@ -4,47 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/screenPrototype/styleOchtend.css" />
+    <link rel="stylesheet" href="./styleOchtend.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script>
+      setInterval(selectScreen, 300000);
+
+function selectScreen() {
+  const d = new Date();
+  let hour = d.getHours();
+
+  if (hour < 12) {
+    
+    window.location.href = './ochtend.html';
+    console.log('./ochtend.html');
+  } else if (hour >= 12 && hour < 15) {
+    window.location.href = './middag.html';
+  } else {
+    window.location.href = './avond.html';
+  }
+}
+
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <div class="lijst1">
         <div class="card">
-          <img src="/screenPrototype/img/Middel 4.png" />
+          <img src="./img/Middel 4.png" />
           <p>
             Jan Korteachternaam <br />
             Jarig op: 12-12-2021
           </p>
         </div>
         <div class="card">
-          <img src="/screenPrototype/img/Middel 4.png" />
+          <img src="./img/Middel 4.png" />
           <p>
             Justin Streuper <br />
             Jarig op: 12-12-2021
           </p>
         </div>
         <div class="card">
-          <img src="/screenPrototype/img/Middel 4.png" />
+          <img src="./img/Middel 4.png" />
           <p>
             Timo Wieme <br />
             Jarig op: 12-12-2021
           </p>
         </div>
         <div class="card">
-          <img src="/screenPrototype/img/Middel 4.png" />
+          <img src="./img/Middel 4.png" />
           <p>
             Caspar Bosch <br />
             Jarig op: 12-12-2021
           </p>
         </div>
         <div class="card">
-          <img src="/screenPrototype/img/Middel 4.png" />
+          <img src="./img/Middel 4.png" />
           <p>
             Viktor Harmens<br />
             Jarig op: 12-12-2021
@@ -54,8 +73,8 @@
       <div class="event">
         <div class="event1">
           <div class="project__content">
-          <img class="img" src="/screenPrototype/img/Ingang_kantoor.png" />
-          <img class="overlay" src="/screenPrototype/img/Logo_BvdB_2023_wit 1.png"/>
+          <img class="img" src="./img/Ingang_kantoor.png" />
+          <img class="overlay" src="./img/Logo_BvdB_2023_wit 1.png"/>
           </div>
           <h1>Padel</h1>
           <div class="text" >

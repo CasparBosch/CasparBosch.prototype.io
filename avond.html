@@ -4,19 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/screenPrototype/styleAvond.css" />
+    <link rel="stylesheet" href="./styleAvond.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script>
+      setInterval(selectScreen, 300000);
+
+function selectScreen() {
+  const d = new Date();
+  let hour = d.getHours();
+
+  if (hour < 12) {
+    
+    window.location.href = './ochtend.html';
+    console.log('./ochtend.html');
+  } else if (hour >= 12 && hour < 15) {
+    window.location.href = './middag.html';
+  } else {
+    window.location.href = './avond.html';
+  }
+}
+
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <div class="warning"><h1>Warnings:</h1></div>
       <div class="map">
-        <img class="img" src="/screenPrototype/img/map.png" />
+        <img class="img" src="./img/map.png" />
         <h1>File</h1>
         <div class="text">
             Lorem ipsum dolor sit amet consectetur. 
